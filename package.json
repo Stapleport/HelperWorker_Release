@@ -1,0 +1,22 @@
+{
+  "name": "stapleport-helper-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Stapleport HelperWorker（独立发布版）：ImputePay 机器支付的第三方 helper——kit 源码已 vendor，无 monorepo 依赖。",
+  "scripts": {
+    "dev": "wrangler dev --test-scheduled",
+    "deploy": "wrangler deploy",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
